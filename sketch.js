@@ -3,7 +3,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var roof,rope1;
+var roof,rope1,rope2,rope3,rope4,rope5;
 var bobObject1, bobObject2, bobObject3, bobObject4, bobObject5;
 
 function preload()
@@ -17,7 +17,7 @@ function setup() {
     engine = Engine.create();
     world = engine.world;
     
-    roof = createSprite(400,40,600,20);
+    roof = createSprite(400,height/4,600,20);
     roof.shapeColor = color(156, 158, 161);
 
     bobObject1 = new Bob(260,600,70);
